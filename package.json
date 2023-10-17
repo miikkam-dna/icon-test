@@ -1,6 +1,6 @@
 {
   "name": "@miikkam-dna/icon-test",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "own test repo",
   "main": "bundle/index.common.js",
   "files": [
