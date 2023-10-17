@@ -1,13 +1,13 @@
 {
-  "name": "juuust-vue-icon",
+  "name": "@miikkam-dna/icon-test",
   "version": "0.0.2",
-  "description": "Juuust Vue Icon, Automation workflow with Figma",
+  "description": "own test repo",
   "main": "bundle/index.common.js",
   "files": [
     "dist",
     "es"
   ],
-  "repository": "https://github.com/leadream/juuust-vue-icon.git",
+  "repository": "https://github.com/miikkam-dna/icon-test.git",
   "scripts": {
     "generate": "sudo rm -rf src/icons && node bin/build.js",
     "serve": "vue-cli-service serve",
