@@ -49,6 +49,7 @@ client.file(fileId)
         const { width, height } = c.absoluteBoundingBox
 
         const iconName = name.replace(/\//g, '-') // Replace "/" with "-"
+        console.log('Replaced "/" with "-" in icon name')
 
         components[id] = {
           name: iconName,
