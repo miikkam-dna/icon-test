@@ -45,7 +45,7 @@
           document.execCommand('copy')
         }
         document.body.removeChild(input)
-        this.$message.success('复制成功')
+        this.$message.success('Copied!')
       }
     }
   };
