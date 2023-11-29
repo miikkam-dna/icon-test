@@ -1,13 +1,14 @@
 const upperCamelCase = require('uppercamelcase')
 
 const parseName = (name, defaultStyle) => {
-  const cleanedName = name.replace(/\//g, '-')
-  const nameSlices = cleanedName.split('-')
-  const style = nameSlices[nameSlices.length - 1]
+  const cleanedName = name.replace(/\//g, '-') // Replace "/" with "-"
+  const nameSlices = cleanedName.split('/')
+  const iconName = nameSlices[nameSlices.length - 1]
+  const style = iconName.split('-').pop()
   return {
     name,
-    componentName: upperCamelCase(cleanedName),
-    style: style==='fill' || style==='stroke' ? style : defaultStyle
+    componentName: upperCamelCase(iconName),
+    style: style === 'fill' || style === 'stroke' ? style : defaultStyle
   }
 }
 
